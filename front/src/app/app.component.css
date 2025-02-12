@@ -1,0 +1,89 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 1px solid gainsboro;
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+
+.client-chatbox {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+}
+
+.msg-lineup {
+  margin-left: 3rem;
+}
+
+.msg-container {
+  border: 1px solid gainsboro;
+  height: 16rem;
+  overflow-y: scroll;
+  padding: 0.5rem;
+}
+
+.sender,
+.timestamp {
+  font-size: 0.75rem;
+}
+
+.sender {
+  font-weight: bold;
+}
+
+.message {
+  border-radius: 0.5rem;
+  background-color: gainsboro;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.send-box {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+input[type="text"] {
+  padding-left: 0.5rem;
+  border: 1px solid gainsboro;
+  border-radius: 0.25rem;
+  width: 100%;
+}
