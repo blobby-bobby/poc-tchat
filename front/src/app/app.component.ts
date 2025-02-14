@@ -39,8 +39,9 @@ export class AppComponent implements OnInit, AfterViewChecked {
   @ViewChildren('messageContainer') messageContainer!: QueryList<ElementRef>;
 
   ngOnInit() {
+    this.activeUsers.push('Support');
     this.handleSocketEvents();
-    this.randomizeNamesArray();
+    // this.randomizeNamesArray();
   }
 
   ngAfterViewChecked() {

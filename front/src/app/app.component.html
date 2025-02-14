@@ -3,10 +3,21 @@
     <h3>Status</h3>
     <p>{{ status }}</p>
   </div>
-  <button (click)="addClient()">Add Someone in Chat Room</button>
+  <button (click)="addClient()" [disabled]="activeUsers.length > 1">
+    Add Someone in Chat Room
+  </button>
 </header>
 <main>
   <hr />
+  <aside>
+    <p>
+      Active Users :
+      <span>
+        @for (user of activeUsers; track user; let i = $index) {
+        {{ user }}, }
+      </span>
+    </p>
+  </aside>
   <div class="container">
     @for (user of activeUsers; track user; let i = $index) {
     <article>
